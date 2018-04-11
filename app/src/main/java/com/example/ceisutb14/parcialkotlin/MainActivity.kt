@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
 
         if (valSource == "binario" && valdestination == "octal"){
 
-            val l = java.lang.Long.parseLong(boxnumber.toString(), 2)
+            var b = boxnumber.toString()
+
+            val l = java.lang.Long.parseLong(b, 2)
             println("HERE!!!!! "+java.lang.Long.toOctalString(l))
 
         }else if(valSource == "octal" && valdestination == "binario"){
